@@ -8,6 +8,10 @@ body {
 	font-family: 'Merriweather', serif;
 }
 
+label {
+	display: block;
+}
+
 @media min-width: (761px) {
 
 }

@@ -12,23 +12,31 @@
 	  	The Code Review
 	  </header>
 
-	  <div class="infobox">
-	  	<h1>Signup for our newsletter</h1>
-	  	<p>Get the latest news on how your code is doing right in your inbox</p>
-	  </div>
-
+	  <h2>Signup for our newsletter</h2>
+	  <p>Get the latest news on how your code is doing right in your inbox</p>
+	  	
+	  
 	  <form action="index.html" method="post">
-	  	<div class="contact-info">
+
+	  	<fieldset>
+
+	  		<h2>Contact Information</h2>
+			  	
 		  	<label for="name">Full Name</label>
 		  	<input type="text" id="name" name="contact_name" required>
+		  	
 		  	<label for="email">Email Address</label>
 		  	<input type="text" id="email" name="contact_email" required>
+		  	
 		  	<label for="phone">Phone Number</label>
 		  	<input type="text" id="phone" name="contact_phone">
+		  	
 		  	<label for="street">Street Address</label>
 		  	<input type="text" id="street" name="contact_street">
+		  	
 		  	<label for="city">City</label>
 		  	<input type="text" id="city" name="contact_city">
+		  	
 		  	<label for="state">State</label>
 		  	<select id="state" name="contact_state">
 				<option value="AL">Alabama</option>
@@ -83,23 +91,31 @@
 				<option value="WI">Wisconsin</option>
 				<option value="WY">Wyoming</option>
 			</select>
+			
 			<label for="zip">Zip Code</label>
 		  	<input type="text" id="zip" name="contact_zip">
-		</div>
+		
+		</fieldset>
 
-		<div class="newsletter-info">
+		<fieldset>
+
+			<h2>Newsletter</h2>
+
 			<label>Select the newsletters you would like to receive</label>
-			<input type="checkbox" id="html" name="html" value="html" checked>
-			<input type="checkbox" id="css" name="css" value="html">
-			<input type="checkbox" id="javascript" name="javascript" value="javascript">
+			<input type="checkbox" id="html" name="html" value="html" checked><label for="html">HTML News</label><br>
+
+			<input type="checkbox" id="css" name="css" value="html"><label for="css">CSS News</label><br>
+
+			<input type="checkbox" id="javascript" name="javascript" value="javascript"><label for="javascript">Javascript News</label><br>
 
 			<label>Newsletter format</label>
-			<input type="radio" id="html-format" name="format" value="html-format" checked>
-			<input type="radio" id="plaintext-format" name="format" value="plaintext-format">
+			<input type="radio" id="html-format" name="format" value="html-format" checked><label for="html-format">HTML</label><br>
+
+			<input type="radio" id="plaintext-format" name="format" value="plaintext-format"><label for="plaintext-format">Plain text</label><br>
 			
 			<label for="other-topics">Other topics you'd like to hear about</label>
 			<textarea id="other-topics" name="other-topics"></textarea>
-		</div>
+		</fieldset>
 
 		<button type="submit">Sign Up</button>
 	  </form>

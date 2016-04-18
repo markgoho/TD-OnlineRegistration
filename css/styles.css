@@ -8,10 +8,147 @@ body {
 	font-family: 'Merriweather', serif;
 }
 
+
+.header {
+	width: 100%;
+	background-color: #2d3945;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 700;
+	padding: 28px 0;
+}
+
+h2 {
+	color: #2d3945;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.signup-info {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 6px;
+	border-bottom: 4px solid #2d3945;
+}
+
+.signup-info h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: #2d3945;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.signup-info p {
+	color: #b1b5b9;
+	font-size: .875em;
+	font-weight: 300;
+	padding-bottom: 40px;
+}
+
+form {
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+
+fieldset {
+	margin-top: 3px;
+	border: none;
+	border-top: 2px solid #2d3945;
+	padding-bottom: 20px;
+}
+
+fieldset h2 {
+	padding-top: 29px;
+	padding-bottom: 10px;
+}
+
 label {
 	display: block;
+	font-size: .875em;
+	font-weight: 300;
+	color: #2d3945;
+	padding-top: 12px;
+	padding-bottom: 8px;
 }
+
+input, select, textarea {
+	border-radius: 4px;
+}
+ 
+input[type=text]:focus, 
+textarea:focus,
+select {
+    border: 2px solid #46698b;
+}
+
+input[type="text"], 
+textarea,
+select {
+	border: 2px solid white;
+	background-color: #eff0f1;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
+	color: #8a97a0;
+}
+
+input[id="zip"] {
+	width: 50%;
+}
+
+.inline {
+	display: inline;
+}
+
+fieldset p {
+	font-size: .875em;
+	font-weight: 300;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-bottom: 15px;
+}
+
+button {
+	font-family: Merriweather, sans-serif;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	background-color: #4ebbb5;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.footer {
+	font-size: .7em;
+	color: #b1b5b9;
+	text-align: center;
+	font-style: italic;
+}
+
+
+::-webkit-input-placeholder {
+	font-family: Merriweather, sans-serif;
+	text-align: right;
+	font-size: .775em;
+	font-style: italic;
+	padding-right: 5px;
 
 @media min-width: (761px) {
 
 }
+

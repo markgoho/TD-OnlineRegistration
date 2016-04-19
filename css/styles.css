@@ -1,9 +1,13 @@
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 body {
@@ -17,16 +21,30 @@ body {
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.5em;
 	font-weight: 700;
 	padding: 28px 0;
+}
+
+hr {
+	margin: 5px auto ;
+	border: 1px solid #2d3945;
+
 }
 
 h2 {
 	color: #2d3945;
 	font-size: 1em;
 	font-weight: 700;
+	padding-top: 50px;
+	padding-bottom: 10px;
 }
+
+ legend {
+ 	color: #2d3945;
+ 	font-weight: 700;
+ 	padding-bottom: 20px;
+ }
 
 .signup-info {
 	width: 90%;
@@ -58,16 +76,11 @@ form {
 }
 
 fieldset {
-	margin-top: 3px;
+	margin-top: 20px;
 	border: none;
-	border-top: 2px solid #2d3945;
 	padding-bottom: 20px;
 }
 
-fieldset h2 {
-	padding-top: 29px;
-	padding-bottom: 10px;
-}
 
 label {
 	display: block;
@@ -79,16 +92,21 @@ label {
 }
 
 input, select, textarea {
-	border-radius: 4px;
+	border-radius: 6px;
+
 }
  
-input[type=text]:focus, 
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
 textarea:focus,
-select {
+select:focus {
     border: 2px solid #46698b;
 }
 
-input[type="text"], 
+input[type=text],
+input[type=tel],
+input[type=email], 
 textarea,
 select {
 	border: 2px solid white;
@@ -104,6 +122,11 @@ select {
 
 input[id="zip"] {
 	width: 50%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: 10px;
 }
 
 .inline {
@@ -151,7 +174,7 @@ button {
 	padding-right: 5px;
 }
 
-@media (min-width: 761px) {
+@media (min-width: 760px) {
 	
 
 	.signup-info,
@@ -159,24 +182,66 @@ button {
 		max-width: 600px;
 	}
 
-	fieldset:nth-child(1) label {
+	.flexible label {
 /*		border: 1px solid red;*/
 		display: inline;
 		float: left;
 		width: 25%;
 		padding: 17px 0;
+		margin-bottom: 16px;
 	}
 
-	fieldset:nth-child(1) input[type="text"], 
-	fieldset:nth-child(1) select {
+	.flexible input, 
+	.flexible select {
 /*		border: 1px solid red;*/
 		float: right;
 		width: 75%;
+		margin-bottom: 16px;
 	}
+
+	textarea {
+		height: 8em;
+	}
+
+	input, select, textarea {
+	border-radius: 8px;
+}
 
 }
 
 @media (min-width: 1025px) {
 	
+	.signup-info,
+	form {
+		max-width: 1024px;
+	}
+
+	.contact-left {
+		width: 50%;
+		float: left;
+	}
+
+	.contact-right {
+		width: 50%;
+		float: right;
+		padding-left: 55px;
+	}
+
+	.newsletters {
+		width: 50%;
+		float: left;
+		padding-right: 15px;
+	}
+
+	.newsletter-format {
+		width: 50%;
+		float: right;
+	}
+
+	label[for="other-topics"] {
+		clear: both;
+	}
+
+
 }
 

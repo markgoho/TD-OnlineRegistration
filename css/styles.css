@@ -1,7 +1,9 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -147,8 +149,34 @@ button {
 	font-size: .775em;
 	font-style: italic;
 	padding-right: 5px;
+}
 
-@media min-width: (761px) {
+@media (min-width: 761px) {
+	
 
+	.signup-info,
+	form {
+		max-width: 600px;
+	}
+
+	fieldset:nth-child(1) label {
+/*		border: 1px solid red;*/
+		display: inline;
+		float: left;
+		width: 25%;
+		padding: 17px 0;
+	}
+
+	fieldset:nth-child(1) input[type="text"], 
+	fieldset:nth-child(1) select {
+/*		border: 1px solid red;*/
+		float: right;
+		width: 75%;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	
 }
 

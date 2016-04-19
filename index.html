@@ -5,7 +5,7 @@
     <title>Mark Goho's Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
 	  <div class="header">
@@ -29,13 +29,13 @@
 			  	
 		  	<div class="contact-left">
 			  	<label for="name">Full Name</label>
-			  	<input type="text" id="name" name="contact_name" placeholder="Required" required>
+			  	<input type="text" id="name" name="contact_name" placeholder="Required" aria-required=”true” required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname">
 			  	
 			  	<label for="email">Email Address</label>
 			  	<input type="email" id="email" name="contact_email" placeholder="Required" required>
 			  	
 			  	<label for="phone">Phone Number</label>
-			  	<input type="tel" id="phone" name="contact_phone">
+			  	<input type="tel" id="phone" placeholder="555-555-5555" name="contact_phone">
 			  	
 			  	<label for="street">Street Address</label>
 			  	<input type="text" id="street" name="contact_street">
@@ -102,9 +102,28 @@
 				</select>
 				
 				<label for="zip">Zip Code</label>
-			  	<input type="text" id="zip" name="contact_zip">
+			  	<input type="text" id="zip" placeholder="12345" name="contact_zip">
 		  	</div>
 		
+		</fieldset>
+
+		<hr>
+
+		<fieldset class="flexible">
+			
+			<legend>User Account</legend>
+			<p>If you are interested in creating an account, please fill out the information below.</p>
+
+			<div class="contact-left">
+				<label for="username">Username</label>
+				<input type="text" id="username" name="contact_username">
+			</div>
+
+			<div class="contact-right">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="contact_password">
+			</div>
+
 		</fieldset>
 
 		<hr>

@@ -11,7 +11,7 @@
 }
 
 body {
-	font-family: 'Merriweather', serif;
+	font-family: 'Josefin Slab', serif;
 }
 
 
@@ -36,7 +36,6 @@ h2 {
 	color: #2d3945;
 	font-size: 1em;
 	font-weight: 700;
-	padding-top: 50px;
 	padding-bottom: 10px;
 }
 
@@ -99,6 +98,7 @@ input, select, textarea {
 input[type=text]:focus,
 input[type=tel]:focus,
 input[type=email]:focus,
+input[type=password]:focus,
 textarea:focus,
 select:focus {
     border: 2px solid #46698b;
@@ -106,7 +106,8 @@ select:focus {
 
 input[type=text],
 input[type=tel],
-input[type=email], 
+input[type=email],
+input[type=password],
 textarea,
 select {
 	border: 2px solid white;
@@ -146,7 +147,7 @@ input[type="radio"] {
 }
 
 button {
-	font-family: Merriweather, sans-serif;
+	font-family: 'Josefin Slab', serif;
 	padding: 19px 39px 18px 39px;
 	color: #FFF;
 	background-color: #4ebbb5;
@@ -167,7 +168,7 @@ button {
 
 
 ::-webkit-input-placeholder {
-	font-family: Merriweather, sans-serif;
+	font-family: 'Josefin Slab', serif;
 	text-align: right;
 	font-size: .775em;
 	font-style: italic;
@@ -210,6 +211,7 @@ button {
 }
 
 @media (min-width: 1025px) {
+	
 	
 	.signup-info,
 	form {
